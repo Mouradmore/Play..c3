@@ -881,7 +881,7 @@ export const countries = [
             "ara": {
                 "official": "جمهورية سنغافورة",
                 "common": "سنغافورة"
-            },
+            }
         },
         "continents": [
             "Asia"
@@ -4737,7 +4737,7 @@ export const countries = [
             "ara": {
                 "official": "جمهورية اتحاد ميانمار",
                 "common": "ميانمار"
-            },
+            }
 
         },
         "continents": [
@@ -6188,7 +6188,7 @@ export const countries = [
             "ara": {
                 "official": "دولة فلسطين",
                 "common": "فلسطين"
-            },
+            }
         },
         "continents": [
             "Asia"
