@@ -733,7 +733,7 @@ export const countries = [
             "ara": {
                 "official": "جزر العذراء البريطانية",
                 "common": "جزر العذراء"
-            },
+            }
         },
         "continents": [
             "North America"
