@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin, FaLanguage } from 'react-icons/fa';
 import { Link } from "react-router-dom"
-import spain from "../images/Algeria.png"
+import spain from "../images/spain.png"
 import uk from "../images/uk.png"
 import { useFlags } from '../useFlags';
 
@@ -16,14 +16,15 @@ export const Home = () => {
   return (
       <div className='home-cont'>
         <div className='title-cont'>
-            <h1 className='title'>InTexT English</h1>
+            <h1 className='title'>Flags Game</h1>
             <p>
-              {language === 'english' ? 'Guess the country flags!' : 'تخمين أعلام الدول!'}
+              {language === 'english' ? 'Guess the country flags!' : '¡Adivina las banderas de los países!'}
             </p>
         </div>
         <div className='logos'>
           <div className='social-media'> 
-      play_c1
+            <Link to='https://github.com/aanddy36'><FaGithub className='home-logo'/></Link>
+            <Link to='https://www.linkedin.com/in/delchiaroa/'><FaLinkedin className='home-logo'/></Link>
           </div>
           <div className='languages'>
             <button style={{border:"none", backgroundColor:"transparent"}} onClick={()=>setIsLanguageToggled(prev=>!prev)}>
@@ -39,19 +40,19 @@ export const Home = () => {
               <div>
                 <input type='radio' name='language' id='spanish' onChange={handleChange} value='spanish'/>
                 <label htmlFor='spanish' className={language === 'spanish' ? 'selected-language' : ''}>
-                  <img src={spain} className='mini-img'/>{language === 'english' ? 'Spanish' : 'Arabic'}
+                  <img src={spain} className='mini-img'/>{language === 'english' ? 'Spanish' : 'Español'}
                 </label>
               </div>
             </div>
           </div>
         </div>
-        <Link className='home-links all' to='/World'><button>{language === 'english' ? 'World' : 'عالم'}</button></Link>
-        <Link className='home-links europe' to='/Europe'><button>{language === 'english' ? 'Europe' : 'أوروبا'}</button></Link>
-        <Link className='home-links s-america' to='/South America'><button>{language === 'english' ? 'South America' : 'أمريكا الجنوبية'}</button></Link>
-        <Link className='home-links n-america' to='/North America'><button>{language === 'english' ? 'North America' : 'أمريكا الشمالية'}</button></Link>
-        <Link className='home-links africa' to='/Africa'><button>{language === 'english' ? 'Africa' : 'أفريقيا'}</button></Link>
-        <Link className='home-links asia' to='/Asia'><button>{language === 'english' ? 'Asia' : 'آسيا'}</button></Link>
-        <Link className='home-links oceania' to='/Oceania'><button>{language === 'english' ? 'Oceania' : 'أوقيانوسيا'}</button></Link>
+        <Link className='home-links all' to='/World'><button>{language === 'english' ? 'World' : 'Mundo'}</button></Link>
+        <Link className='home-links europe' to='/Europe'><button>{language === 'english' ? 'Europe' : 'Europa'}</button></Link>
+        <Link className='home-links s-america' to='/South America'><button>{language === 'english' ? 'South America' : 'América del Sur'}</button></Link>
+        <Link className='home-links n-america' to='/North America'><button>{language === 'english' ? 'North America' : 'América del Norte'}</button></Link>
+        <Link className='home-links africa' to='/Africa'><button>{language === 'english' ? 'Africa' : 'África'}</button></Link>
+        <Link className='home-links asia' to='/Asia'><button>Asia</button></Link>
+        <Link className='home-links oceania' to='/Oceania'><button>{language === 'english' ? 'Oceania' : 'Oceanía'}</button></Link>
       </div>
     )
 }
