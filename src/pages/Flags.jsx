@@ -20,18 +20,20 @@ export const Flags = () => {
 
     useEffect(()=>{
       setContinente(()=>{
+       if(continent == "Asia"){
+          return "آسيا"}
         if(continent == "Africa"){
-          return "África"}
+          return "أفريقيا"}
         if(continent == "Oceania"){
-          return "Oceanía"}
+          return "أوقيانوسيا"}
         if(continent == "Europe"){
-          return "Europa"}
+          return "أوروبا"}
         if(continent == "North America"){
-          return "América del Norte"}
+          return "أمريكا الشمالية"}
         if(continent == "South America"){
-          return "América del Sur"}
+          return "أمريكا الجنوبية"}
         if(continent == "World"){
-          return "Mundo"}
+          return "عالم"}
       })
     },[continent, language])
   
@@ -77,8 +79,8 @@ export const Flags = () => {
     <div>
       <Navbar params={continent}/>
       <h1 className='flag-title'>
-        {language === 'english' ? `${continent}: Flags` : `${continente}: Banderas`}
-        <span style={{color: "#5e5e5e"}}> - {language === "english" ? 'Flags Quiz Games' : 'Quiz de Banderas'}</span>
+        {language === 'english' ? `${continent}: Flags` : `${continente}: play_c1`}
+        <span style={{color: "#5e5e5e"}}> - {language === "english" ? 'Flags Quiz Games' : 'العاب اختبار الأعلام'}</span>
       </h1>
       <div className='flag-info'>
         <div style={{display:"flex", justifyContent:"space-between", gap:"20px"}}>
@@ -95,7 +97,7 @@ export const Flags = () => {
       </div>
       <div className='flag-cont' onMouseMove={newCursorPosition} onMouseEnter={()=>cursorOut(false)} onMouseLeave={()=>cursorOut(true)}>    
         <p className='cursor-follower' style={{ left: cursorPosition.x, top: cursorPosition.y, display: isCursorIn && selectedCountry ? "flex" : "none" , }}>
-          {selectedCountry ? (language === 'english' ? `Click on ${selectedCountry.name.common}` : `Hunde en ${selectedCountry.translations.spa.common}`):""}
+          {selectedCountry ? (language === 'english' ? `Click on ${selectedCountry.name.common}` : `انقر هنا ${selectedCountry.translations.spa.common}`):""}
         </p>  
         {allCountries.map(country =>{
           return <div className='flag-btn-cont' key={country.cioc}  id={country.cioc}> 
