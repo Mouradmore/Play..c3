@@ -89,7 +89,7 @@ export const Flags = () => {
         </div>
         <h3>{timeAsStrings}</h3>
         <h3 className='selected-country'>
-          {selectedCountry ? (language === "english" ? selectedCountry.name.common : selectedCountry.translations.spa.common) : ""}
+          {selectedCountry ? (language === "english" ? selectedCountry.name.common : selectedCountry.translations.ara.common) : ""}
           <button style={{display: missingCountries.length > 0 ? "block" : "none"}} onClick={passToOtherCountry} className='next-country'>
             <FaAngleRight/>
           </button>
@@ -97,7 +97,7 @@ export const Flags = () => {
       </div>
       <div className='flag-cont' onMouseMove={newCursorPosition} onMouseEnter={()=>cursorOut(false)} onMouseLeave={()=>cursorOut(true)}>    
         <p className='cursor-follower' style={{ left: cursorPosition.x, top: cursorPosition.y, display: isCursorIn && selectedCountry ? "flex" : "none" , }}>
-          {selectedCountry ? (language === 'english' ? `Click on ${selectedCountry.name.common}` : `انقر هنا ${selectedCountry.translations.spa.common}`):""}
+          {selectedCountry ? (language === 'english' ? `Click on ${selectedCountry.name.common}` : `انقر هنا ${selectedCountry.translations.ara.common}`):""}
         </p>  
         {allCountries.map(country =>{
           return <div className='flag-btn-cont' key={country.cioc}  id={country.cioc}> 
@@ -105,7 +105,7 @@ export const Flags = () => {
                 <img src={country.flags.png} alt={country.flags.alt} className={correctCountries.includes(country) ? 'flag button-disabled' : 'flag'}/>
               </button>
               <div className='wrong-country'>
-                {language === 'english' ? country.name.common : country.translations.spa.common}
+                {language === 'english' ? country.name.common : country.translations.ara.common}
               </div>
           </div>
         })}
