@@ -12695,9 +12695,9 @@ export const countries = [
     },
     {
         "flags": {
-            "png": "https://flagpedia.net/palestine",
-            "svg": "https://flagpedia.net/palestine",
-            "alt": "The flag of Palestine  — the Magen David — centered between two equal horizontal blue bands situated near the top and bottom edges of the field."
+            "png": "https://www.now-time.com/flags/1600/ps.png",
+            "svg": "https://www.now-time.com/flags/1600/ps.png",
+            "alt": " Palestine."
         },
         "name": {
             "common": "Palestine",
@@ -12713,7 +12713,7 @@ export const countries = [
                 }
             }
         },
-        "cioc": "ISR",
+        "cioc": "pal",
         "unMember": true,
         "capital": [
             "Jerusalem"
