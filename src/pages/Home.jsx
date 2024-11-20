@@ -16,14 +16,14 @@ export const Home = () => {
   return (
       <div className='home-cont'>
         <div className='title-cont'>
-            <h1 className='title'>InTexT English</h1>
+            <h1 className='title'>play_c3</h1>
             <p>
               {language === 'english' ? 'Guess the country flags!' : 'تخمين أعلام الدول!'}
             </p>
         </div>
         <div className='logos'>
           <div className='social-media'> 
-      play_c1
+      InTexT English
           </div>
           <div className='languages'>
             <button style={{border:"none", backgroundColor:"transparent"}} onClick={()=>setIsLanguageToggled(prev=>!prev)}>
