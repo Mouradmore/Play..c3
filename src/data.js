@@ -12695,17 +12695,17 @@ export const countries = [
     },
     {
         "flags": {
-            "png": "https://flagcdn.com/w320/il.png",
-            "svg": "https://flagcdn.com/il.svg",
-            "alt": "The flag of Israel has a white field with a blue hexagram — the Magen David — centered between two equal horizontal blue bands situated near the top and bottom edges of the field."
+            "png": "https://flagpedia.net/palestine",
+            "svg": "https://flagpedia.net/palestine",
+            "alt": "The flag of Palestine  — the Magen David — centered between two equal horizontal blue bands situated near the top and bottom edges of the field."
         },
         "name": {
-            "common": "Israel",
-            "official": "State of Israel",
+            "common": "Palestine",
+            "official": "State of Palestine",
             "nativeName": {
                 "ara": {
-                    "official": "دولة إسرائيل",
-                    "common": "إسرائيل"
+                    "official": "دولة فلسطين",
+                    "common": "فلسطين"
                 },
                 "heb": {
                     "official": "מדינת ישראל",
@@ -12720,12 +12720,12 @@ export const countries = [
         ],
         "translations": {
             "ara": {
-                "official": "دولة إسرائيل",
-                "common": "إسرائيل"
+                "official": "دولة فلسطين",
+                "common": "فلسطين"
             },
             "bre": {
-                "official": "Stad Israel",
-                "common": "Israel"
+                "official": "Stad Palestine",
+                "common": "Palestine"
             },
             "ces": {
                 "official": "Stát Izrael",
